@@ -1,0 +1,227 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main container to center the content */
+main {
+    background-color: #F5F7FB;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    padding: 32px;
+}
+
+        .start {
+            display: flex;
+            text-align: center;
+            z-index: 1;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        
+        .start--title {
+            color: #293264;
+            font-size: 32px;
+            font-weight: bold;
+            font-family: karla, sans-serif;
+            margin-bottom: 6px;
+        }
+        
+        .start--description {
+            color: #293264;
+            font-size: 16px;
+            font-weight: regular;
+            font-family: inter;
+            margin-top: 0px;
+            margin-bottom: 20px;
+        }
+        
+        .start--btn {
+            width: 193px;
+            height: 52px;
+            background-color: #4D5B9E;
+            color: #F5F7FB;
+            padding: 2px 16px;
+            border-radius: 8px;
+            border: none;
+            font-size: 16px;
+            font-family: inter;
+            font-weight: medium;
+        }
+        
+        .start--btn:hover {
+            background-color: #2A3FA5;
+        }
+        
+        
+
+        .blob {
+            width: 290px;
+            height: 290px;
+            box-shadow: -10vmin 10vmin 0 rgba(255,255,255,0.07);
+            position: fixed;
+            z-index: 0;
+        }
+
+        .blob1 {
+            background-color: #FFFAD1;
+            border-radius: 94% 31% 30% 67% / 67% 37% 56% 34%;
+            top: -185px;
+            right: -180px;
+            z-index: 0;
+        }
+
+        .blob2 {
+            background-color: #DEEBF8;
+            border-radius: 30% 67% 67% 37% / 94% 31% 56% 34%;
+            bottom: -190px;
+            left: -185px;
+            z-index: 0;
+        }
+
+
+
+/* Question container */
+.questions {
+    margin: auto;
+    font-size: 16px;
+    z-index: 1;
+    width: 100%; /* Set width to take the full width of its parent */
+    max-width: 600px; /* Ensure the questions section doesn't grow too wide */
+    padding: 16px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Allow it to grow if needed */
+}
+
+/* Question wrapper */
+.question--container {
+    border-bottom: 0.25px solid #DBDEF0;
+    margin: 10px 0;
+    padding: 12px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+/* Question heading */
+.questions h2 {
+    color: #293264;
+    margin-bottom: 0px;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: Karla, sans-serif;
+    text-align: start;
+    margin: 8px 4px;
+}
+
+/* Choices container */
+.choices {
+    margin-top: 12px;
+    display: flex; /* Use Flexbox for layout */
+    flex-wrap: wrap; /* Allow choices to wrap */
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+/* Individual choice button styling */
+.choice-button {
+    background-color: #F5F7FB;
+    border: 0.5px solid #ddd;
+    border-radius: 10px;
+    padding: 8px 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 12px;
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    color: #293264;
+    transition: background-color 0.3s;
+    min-width: 100px; /* Ensure minimum width for buttons */
+    margin-bottom: 8px; /* Space for buttons in case of wrapping */
+    margin-right: 16px;
+}
+
+.choice-button.selected.correct {
+    background-color: #94D7A2;
+    border: none;
+}
+
+.choice-button.selected.wrong {
+    background-color: #F8BCBC;
+    border: none;
+}
+
+.choice-button.correct {
+    background-color: #94D7A2;
+    border: none;
+}
+
+
+/* Hover effect for buttons */
+.choice-button:hover {
+    background-color: #e0e0e0;
+}
+
+/* Selected choice styling */
+.choice-button.selected {
+    background-color: #D6DBF5;
+    border-color: #293264;
+    font-weight: bold;
+}
+
+/* Hidden radio button for form controls */
+.hidden-radio {
+    display: none;
+}
+
+/* Results container */
+.results--container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px 8px;
+}
+
+
+.submit-btn {
+    border: none;
+    color: #DBDEF0;
+    background-color: #4D5B9E;
+    border-radius: 6px;
+    padding: 12px 16px;
+}
+
+.after--submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.play-again-btn {
+    margin-left: 24px;
+    border: none;
+    color: #DBDEF0;
+    background-color: #4D5B9E;
+    border-radius: 6px;
+    padding: 8px 12px;
+    
+}
+
+.result {
+    font-family: inter, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #293264;
+}
